@@ -1,0 +1,37 @@
+.color-chip {
+    height: 30px;
+    width: 30px;
+  }
+  
+  .color-box {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .mdc-data-table__cell {
+   
+    padding: 0;
+  }
+  img.rounded-circle.ng-star-inserted {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin: 15px auto;
+  }
+  
+  .wrap-cell {
+    white-space: normal;
+    word-wrap: break-word;
+    max-width: 100px; /* Adjust the max-width value as needed */
+    text-align: center; /* Center-align the text within the cells */
+  
+  }
+  .account-action{
+    border: none;
+    background-color: transparent;
+    margin: 5px 12px;
+    padding: 4px 7px;
+    border-radius: 4px;
+    font-size: 18px;
+  }

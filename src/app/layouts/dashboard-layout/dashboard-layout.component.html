@@ -1,0 +1,30 @@
+<mat-sidenav-container>
+  <mat-sidenav #drawer fixedInViewport="true" mode="side" opened="true"
+    style="width: 230px; ">
+    <mat-toolbar class="sidebar-style" color="primary" fxLayout
+      fxLayoutGap="16px">
+      <img class="logo" src="../assets/images/logo.png">
+    </mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="/client"><span class="nav-item"><mat-icon>people</mat-icon>
+          <span
+            class="nav-item-text" routerLinkActive="active-item">Client</span></span></a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button class="btn-primary" mat-menu-item></button>
+      <div fxFlex fxLayout fxLayoutAlign="start center">
+        <div fxFlex></div>
+
+        <div class="toolbar-separator"></div>
+        <button class mat-menu-item (click)="logout()">
+          <mat-icon>power_settings_new</mat-icon>
+        </button>
+      </div>
+    </mat-toolbar>
+    <div class="content mt-80 mx-16">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
